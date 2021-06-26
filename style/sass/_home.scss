@@ -1,0 +1,35 @@
+/** @format */
+
+#particle-js {
+	width: 99vw;
+	height: 98vh;
+}
+
+.home {
+	position: absolute;
+	right: 1vw;
+	top: 30vh;
+	width: 85vw;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.profile-img {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	img {
+		object-fit: cover;
+		width: 200px;
+		height: 200px;
+		border-radius: 100%;
+	}
+}
+
+.home-heading {
+	color: #fff;
+}
