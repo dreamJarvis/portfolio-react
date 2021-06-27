@@ -1,55 +1,61 @@
+/** @format */
+
 #side_navbar {
-    position: absolute;
-    width: 5vw;
-    height: 100vh;
-    background-color: $sidebar-background-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	position: absolute;
+	width: 5vw;
+	height: 100vh;
+	background-color: $sidebar-background-color;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 #profile {
-    flex-grow: 1;
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    align-items: flex-end;
-    border-bottom: 1px solid rgb(88, 88, 88);
-    i {
-        font-size: 2rem;
-        color: rgb(155, 155, 155);
-        padding: 1rem;
-        margin-bottom: 2rem;
-        transition: 0.3s;
-    }
-    i:hover {
-        font-size: 2.2rem;
-        color: rgb(255, 226, 164);
-    }
+	flex-grow: 1;
+	display: flex;
+	width: 80%;
+	justify-content: center;
+	align-items: flex-end;
+	border-bottom: 1px solid rgb(88, 88, 88);
+	i {
+		font-size: 2rem;
+		color: rgb(155, 155, 155);
+		padding: 1rem;
+		margin-bottom: 2rem;
+		transition: 0.3s;
+	}
+	i:hover {
+		font-size: 2.2rem;
+		color: rgb(255, 226, 164);
+	}
 }
 
 #options {
-    flex-grow: 2;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 2rem;
-    .option-item {
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 2rem;
-        i {
-            padding: 1rem;
-            font-size: 1.8rem;
-            color: rgb(155, 155, 155);
-            transition: 0.3s;
-        }
-        i:hover {
-            font-size: 2.2rem;
-            color: rgb(188, 255, 213);
-        }
-    }
+	flex-grow: 2;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 2rem;
+	.option-item {
+		list-style-type: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 2rem;
+		i {
+			padding: 1rem;
+			font-size: 1.8rem;
+			color: rgb(155, 155, 155);
+			transition: 0.3s;
+		}
+		i:hover {
+			font-size: 2.2rem;
+			color: rgb(188, 255, 213);
+		}
+		i:active {
+			font-size: 2.2rem;
+			color: rgb(255, 255, 255);
+		}
+	}
 }

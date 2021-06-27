@@ -1,4 +1,10 @@
-@import './_resets';
-@import './variables';
-@import './sidenavBar';
-@import './home';
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Ubuntu:wght@300&display=swap");
+
+@import "./_resets";
+@import "./variables";
+@import "./sidenavBar";
+@import "./home";
+@import "./about";

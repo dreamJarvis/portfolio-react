@@ -1,3 +1,6 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Ubuntu:wght@300&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -5,6 +8,8 @@
           box-sizing: border-box;
 }
 
+/** @format */
+/** @format */
 #side_navbar {
   position: absolute;
   width: 5vw;
@@ -99,6 +104,11 @@
   color: #bcffd5;
 }
 
+#options .option-item i:active {
+  font-size: 2.2rem;
+  color: white;
+}
+
 /** @format */
 #particle-js {
   width: 99vw;
@@ -107,10 +117,9 @@
 
 .home {
   position: absolute;
-  right: 1vw;
-  top: 30vh;
+  left: 8vw;
+  top: 38vh;
   width: 85vw;
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,7 +135,41 @@
           align-items: center;
 }
 
-.profile-img {
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-desc .home-heading {
+  color: rgba(226, 220, 220, 0.904);
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 2rem;
+  line-height: 6rem;
+}
+
+.profile-desc .highlight {
+  color: #ff5252;
+  font-family: "Ubuntu";
+}
+
+/** @format */
+.about {
+  position: absolute;
+  left: 8vw;
+  top: 38vh;
+  width: 85vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,14 +185,26 @@
           align-items: center;
 }
 
-.profile-img img {
+.about .profile-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .profile-img img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 200px;
   height: 200px;
   border-radius: 100%;
-}
-
-.home-heading {
-  color: #fff;
 }

@@ -8,15 +8,15 @@ export default function SideNavBar() {
 		<div>
 			<nav id='side_navbar'>
 				<section id='profile'>
-					<Link to='/about'>
-						<i className='fas fa-user'></i>
+					<Link to='/home'>
+						<i className='fas fa-home'></i>
 					</Link>
 				</section>
 				<section id='options'>
 					<ul id='options_list'>
 						<li className='option-item'>
-							<Link to='/home'>
-								<i className='fas fa-home'></i>
+							<Link to='/about'>
+								<i className='fas fa-user'></i>
 							</Link>
 						</li>
 						<li className='option-item'>

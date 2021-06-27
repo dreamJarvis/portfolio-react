@@ -1,7 +1,7 @@
 /** @format */
 
 import { Box } from "@material-ui/core";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
 
 import "./App.css";
 
@@ -17,15 +17,17 @@ import Particles from "./ParticleBackground";
 function App() {
 	return (
 		<Box>
-			<SideBar />
-			<Switch>
-				<Route path='/' component={Home} />
-				<Route path='/about' component={About} />
-				<Route path='/skills' component={Skills} />
-				<Route path='/projects' component={Projects} />
-				<Route path='/contact' component={Contact} />
-			</Switch>
-			<Particles />
+			<BrowserRouter>
+				<SideBar />
+				<Switch>
+					<Route exact path='/' component={Home} />
+					<Route exact path='/home' component={Home} />
+					<Route exact path='/about' component={About} />
+					<Route exact path='/skills' component={Skills} />
+					<Route exact path='/projects' component={Projects} />
+					<Route exact path='/contact' component={Contact} />
+				</Switch>
+			</BrowserRouter>
 		</Box>
 	);
 }
