@@ -12,8 +12,6 @@ import Projects from "./Pages/projects";
 import Skills from "./Pages/skills";
 import SideBar from "./utils/sideBar";
 
-import Particles from "./ParticleBackground";
-
 function App() {
 	return (
 		<Box>
@@ -21,7 +19,6 @@ function App() {
 				<SideBar />
 				<Switch>
 					<Route exact path='/' component={Home} />
-					<Route exact path='/home' component={Home} />
 					<Route exact path='/about' component={About} />
 					<Route exact path='/skills' component={Skills} />
 					<Route exact path='/projects' component={Projects} />
@@ -31,5 +28,4 @@ function App() {
 		</Box>
 	);
 }
-
 export default App;

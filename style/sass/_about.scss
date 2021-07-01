@@ -2,24 +2,135 @@
 
 .about {
 	position: absolute;
-	left: 8vw;
-	top: 38vh;
-	width: 85vw;
+	left: 5vw;
+	top: 0vh;
+	width: 95vw;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgb(0, 0, 0)),
+		url(../../src/assets/Images/universe.jpg) no-repeat center center / cover;
 
-	.profile-img {
+	.profile-header {
+		width: 65vw;
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		img {
-			object-fit: cover;
-			width: 200px;
+		padding-bottom: 3rem;
+		border-bottom: 2px solid rgb(41, 41, 41);
+
+		.profile-heading {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: space-between;
+
+			.profile-img {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				img {
+					object-fit: cover;
+					width: 200px;
+					height: 200px;
+					border-radius: 100%;
+				}
+			}
+
+			.profile-quote {
+				width: 80%;
+				margin: auto;
+				margin-top: 2rem;
+				color: rgb(255, 154, 154);
+				font-style: italic;
+				font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+					"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+				span {
+					display: block;
+					float: right;
+				}
+			}
+		}
+
+		.profile-content {
 			height: 200px;
-			border-radius: 100%;
+			width: 60%;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+			margin: -2rem 2rem 2rem 0;
+
+			.profile-content-container {
+				border-left: 1px solid rgb(129, 129, 129);
+
+				p {
+					margin-left: 1rem;
+					color: #fff;
+					font-family: $font-family;
+					font-weight: bold;
+					font-size: 1.5rem;
+					line-height: 2rem;
+					letter-spacing: 1px;
+				}
+			}
+		}
+	}
+
+	.tech-stack {
+		width: 60vw;
+		height: 50vh;
+		margin-top: 2rem;
+		margin-left: 5rem;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+
+		.tech-heading {
+			font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+				"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+			ul {
+				list-style-type: none;
+			}
+			li {
+				color: #fff;
+				font-size: 2.5rem;
+			}
+			.highlight {
+				color: rgb(255, 154, 154);
+			}
+		}
+
+		.tech-content {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin-left: 2rem;
+			background: linear-gradient(to right, rgba(0, 0, 0, 0.01), rgb(0, 0, 0));
+
+			.tech-images-cards {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+
+				img {
+					margin: 1rem;
+					object-fit: cover;
+					width: 120px;
+					height: 120px;
+					border-radius: 10%;
+				}
+			}
 		}
 	}
 }

@@ -8,7 +8,7 @@ export default function SideNavBar() {
 		<div>
 			<nav id='side_navbar'>
 				<section id='profile'>
-					<Link to='/home'>
+					<Link to='/'>
 						<i className='fas fa-home'></i>
 					</Link>
 				</section>

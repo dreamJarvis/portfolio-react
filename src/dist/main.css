@@ -1,6 +1,7 @@
 /** @format */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Ubuntu:wght@300&display=swap");
+/** @format */
 * {
   padding: 0;
   margin: 0;
@@ -151,7 +152,7 @@
           align-items: center;
 }
 
-.profile-desc .home-heading {
+.home-desc .home-heading {
   color: rgba(226, 220, 220, 0.904);
   text-align: center;
   font-family: "Raleway";
@@ -159,17 +160,99 @@
   line-height: 6rem;
 }
 
-.profile-desc .highlight {
+.home-desc .highlight {
   color: #ff5252;
   font-family: "Ubuntu";
+}
+
+.txt-type > .txt {
+  border-right: 0.2rem solid white;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: blinkOut;
+          animation-name: blinkOut;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes blinkOut {
+  from {
+    border-right: 0.2rem solid white;
+  }
+  to {
+    border-right: 0;
+  }
+}
+
+@keyframes blinkOut {
+  from {
+    border-right: 0.2rem solid white;
+  }
+  to {
+    border-right: 0;
+  }
 }
 
 /** @format */
 .about {
   position: absolute;
-  left: 8vw;
-  top: 38vh;
-  width: 85vw;
+  left: 5vw;
+  top: 0vh;
+  width: 95vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), to(black)), url(../../src/assets/Images/universe.jpg) no-repeat center center/cover;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), black), url(../../src/assets/Images/universe.jpg) no-repeat center center/cover;
+}
+
+.about .profile-header {
+  width: 65vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 3rem;
+  border-bottom: 2px solid #292929;
+}
+
+.about .profile-header .profile-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+}
+
+.about .profile-header .profile-heading .profile-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,26 +268,144 @@
           align-items: center;
 }
 
-.about .profile-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.about .profile-img img {
+.about .profile-header .profile-heading .profile-img img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 200px;
   height: 200px;
   border-radius: 100%;
+}
+
+.about .profile-header .profile-heading .profile-quote {
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  color: #ff9a9a;
+  font-style: italic;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.about .profile-header .profile-heading .profile-quote span {
+  display: block;
+  float: right;
+}
+
+.about .profile-header .profile-content {
+  height: 200px;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -2rem 2rem 2rem 0;
+}
+
+.about .profile-header .profile-content .profile-content-container {
+  border-left: 1px solid #818181;
+}
+
+.about .profile-header .profile-content .profile-content-container p {
+  margin-left: 1rem;
+  color: #fff;
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 1px;
+}
+
+.about .tech-stack {
+  width: 60vw;
+  height: 50vh;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .tech-stack .tech-heading {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.about .tech-stack .tech-heading ul {
+  list-style-type: none;
+}
+
+.about .tech-stack .tech-heading li {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.about .tech-stack .tech-heading .highlight {
+  color: #ff9a9a;
+}
+
+.about .tech-stack .tech-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 2rem;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.01)), to(black));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.01), black);
+}
+
+.about .tech-stack .tech-content .tech-images-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .tech-stack .tech-content .tech-images-cards img {
+  margin: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 120px;
+  height: 120px;
+  border-radius: 10%;
 }

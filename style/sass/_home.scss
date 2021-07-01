@@ -22,7 +22,7 @@
 	align-items: center;
 }
 
-.profile-desc {
+.home-desc {
 	.home-heading {
 		color: rgba(226, 220, 220, 0.904);
 		text-align: center;
@@ -34,5 +34,25 @@
 	.highlight {
 		color: rgb(255, 82, 82);
 		font-family: "Ubuntu";
+	}
+}
+
+// .txt-type {
+// 	color: rgb(255, 0, 0);
+// }
+
+.txt-type > .txt {
+	border-right: 0.2rem solid rgb(255, 255, 255);
+	animation-duration: 2s;
+	animation-name: blinkOut;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes blinkOut {
+	from {
+		border-right: 0.2rem solid rgb(255, 255, 255);
+	}
+	to {
+		border-right: 0;
 	}
 }
