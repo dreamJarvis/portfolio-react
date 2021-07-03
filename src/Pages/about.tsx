@@ -2,19 +2,8 @@
 import React from "react";
 
 import ProfilePic from "../assets/Images/selfiee.jpeg";
-import jsLogo from "../assets/Images/jslogo.png";
-import tsLogo from "../assets/Images/ts.svg";
-import htmlLogo from "../assets/Images/html5.png";
-import cssLogo from "../assets/Images/css3.jpg";
-import scssLogo from "../assets/Images/scss.png";
-import reactLogo from "../assets/Images/react.jpg";
-import flutterLogo from "../assets/Images/flutter.png";
-import dartLogo from "../assets/Images/Dart-logo.png";
-import cppLogo from "../assets/Images/c++.png";
-import gitLogo from "../assets/Images/git.png";
-import materialLogo from "../assets/Images/Materialui.jpeg";
-import bootstrapLogo from "../assets/Images/bootstrap-social-logo.png";
-import matcssLogo from "../assets/Images/matcss-min.png";
+
+import ImageSlider from "../utils/imageSlider";
 
 export default function about() {
 	return (
@@ -81,7 +70,7 @@ export default function about() {
 				</div>
 				<div className='tech-content'>
 					<div className='tech-images-cards'>
-						<img src={reactLogo} alt='react logo' />
+						{/* <img src={reactLogo} alt='react logo' />
 						<img src={flutterLogo} alt='flutter logo' />
 						<img src={jsLogo} alt='js logo' />
 						<img src={tsLogo} alt='ts logo' />
@@ -93,7 +82,8 @@ export default function about() {
 						<img src={bootstrapLogo} alt='bootstrap logo' />
 						<img src={cppLogo} alt='cpp logo' />
 						<img src={dartLogo} alt='dart logo' />
-						<img src={gitLogo} alt='github logo' />
+						<img src={gitLogo} alt='github logo' /> */}
+						<ImageSlider />
 					</div>
 				</div>
 			</div>

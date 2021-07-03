@@ -50,17 +50,17 @@ class TypeWriter {
 	}
 }
 
+// initilize app
+function init() {
+	const txtElement = document.querySelector(".txt-type")! as any;
+	const words = JSON.parse(txtElement.getAttribute("data-words"));
+	const wait = txtElement.getAttribute("data-wait")!;
+
+	// initialize typoewriter
+	new TypeWriter(txtElement, words, wait);
+}
+
 export default function Home() {
-	// initilize app
-	function init() {
-		const txtElement = document.querySelector(".txt-type")! as any;
-		const words = JSON.parse(txtElement.getAttribute("data-words"));
-		const wait = txtElement.getAttribute("data-wait")!;
-
-		// initialize typoewriter
-		new TypeWriter(txtElement, words, wait);
-	}
-
 	useEffect(() => {
 		// initialize the typing when Dom content is loaded
 		init();
@@ -81,6 +81,7 @@ export default function Home() {
 										data-wait='3000'
 										data-words='[" Software Developer.", " Front End Web Developer.", 
 										" Flutter Developer."]'></span>
+									<span className='typing'>|</span>
 								</h1>
 							</blockquote>
 						</h2>
