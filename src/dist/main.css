@@ -1,6 +1,7 @@
 /** @format */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
 /** @format */
 * {
   padding: 0;
@@ -113,7 +114,7 @@
 /** @format */
 #particle-js {
   width: 99vw;
-  height: 98vh;
+  height: 100vh;
 }
 
 .home {
@@ -502,4 +503,241 @@
 
 #radio3:checked ~ .navigation-auto .auto-btn3 {
   background: #a0a0a0;
+}
+
+/** @format */
+.project-1 {
+  position: absolute;
+  top: 33%;
+  left: 26%;
+  -webkit-transform: translate(-26%, -33%);
+          transform: translate(-26%, -33%);
+}
+
+.project-2 {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -33%);
+          transform: translate(-50%, -33%);
+}
+
+.project-3 {
+  position: absolute;
+  top: 33%;
+  left: 74%;
+  -webkit-transform: translate(-74%, -33%);
+          transform: translate(-74%, -33%);
+}
+
+.project-4 {
+  position: absolute;
+  top: 82%;
+  left: 26%;
+  -webkit-transform: translate(-26%, -82%);
+          transform: translate(-26%, -82%);
+}
+
+.project-5 {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -82%);
+          transform: translate(-50%, -82%);
+}
+
+.project-6 {
+  position: absolute;
+  top: 82%;
+  left: 74%;
+  -webkit-transform: translate(-74%, -82%);
+          transform: translate(-74%, -82%);
+}
+
+.card {
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+  border-radius: 10%;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.6s linear;
+  transition: -webkit-transform 0.6s linear;
+  transition: transform 0.6s linear;
+  transition: transform 0.6s linear, -webkit-transform 0.6s linear;
+  border-radius: 10%;
+  font-family: 'Raleway';
+}
+
+.front img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.front {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
+}
+
+.back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #ff00bf;
+  -webkit-transform: perspective(600px) rotateY(180deg);
+          transform: perspective(600px) rotateY(180deg);
+}
+
+.back-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  text-align: center;
+  width: 100%;
+}
+
+.back-content .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px 7px 5px 7px;
+  margin-top: 20px;
+}
+
+.back-content .heading span {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.sm {
+  margin: 15px 0;
+}
+
+.sm a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  font-size: 18px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.sm a:hover {
+  background: #2c3e50;
+}
+
+.card:hover > .front {
+  -webkit-transform: perspective(600px) rotateY(-180deg);
+          transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover > .back {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
+}
+
+.projects {
+  position: absolute;
+  left: 5vw;
+  top: 0vh;
+  width: 95vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.7))), url(../../src/assets/Images/backgruond.png) no-repeat center center/cover;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../src/assets/Images/backgruond.png) no-repeat center center/cover;
+}
+
+.projects .project-heading {
+  position: absolute;
+  top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Ubuntu';
+}
+
+.projects .project-heading h2 {
+  color: #ff9a9a;
+  font-size: 3rem;
+  font-family: 'Raleway';
+}
+
+.projects .project-heading p {
+  margin-top: 3%;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
 }

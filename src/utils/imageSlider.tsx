@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useEffect } from "react";
+import React, { Component, useEffect } from "react";
 
 import reduxLogo from "../assets/Images/redux.jpg";
 import jsLogo from "../assets/Images/jslogo.png";
@@ -17,21 +17,21 @@ import materialLogo from "../assets/Images/Materialui.jpeg";
 import bootstrapLogo from "../assets/Images/bootstrap-social-logo.png";
 import matcssLogo from "../assets/Images/matcss-min.png";
 
+var counter = 1;
 function setImageSliderAutoMode() {
-	var counter = 1;
-	setInterval(() => {
-		let radioBtns = document.getElementById(
-			"radio" + counter
-		)! as HTMLInputElement;
-		radioBtns.checked = true;
-		counter++;
-		if (counter > 3) counter = 1;
-	}, 5000);
+	let radioBtns = document.getElementById(
+		"radio" + counter
+	) as HTMLInputElement;
+	radioBtns.checked = true;
+	counter++;
+
+	if (counter > 3) counter = 1;
 }
 
 export default function ImageSlider() {
 	useEffect(() => {
-		setImageSliderAutoMode();
+		let x = setInterval(() => setImageSliderAutoMode(), 5000);
+		return () => clearInterval(x);
 	}, []);
 
 	return (

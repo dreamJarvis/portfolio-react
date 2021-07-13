@@ -2,7 +2,6 @@
 import React from "react";
 
 import ProfilePic from "../assets/Images/selfiee.jpeg";
-
 import ImageSlider from "../utils/imageSlider";
 
 export default function about() {

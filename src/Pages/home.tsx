@@ -62,7 +62,6 @@ function init() {
 
 export default function Home() {
 	useEffect(() => {
-		// initialize the typing when Dom content is loaded
 		init();
 	}, []);
 
