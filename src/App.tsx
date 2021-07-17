@@ -9,7 +9,7 @@ import About from "./Pages/about";
 import Contact from "./Pages/contact";
 import Home from "./Pages/home";
 import Projects from "./Pages/projects";
-import Skills from "./Pages/skills";
+import Experience from "./Pages/experience";
 import SideBar from "./utils/sideBar";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
 				<Switch>
 					<Route exact path='/' component={Home} />
 					<Route exact path='/about' component={About} />
-					<Route exact path='/skills' component={Skills} />
+					<Route exact path='/experience' component={Experience} />
 					<Route exact path='/projects' component={Projects} />
 					<Route exact path='/contact' component={Contact} />
 				</Switch>

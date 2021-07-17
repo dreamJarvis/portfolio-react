@@ -69,19 +69,6 @@ export default function about() {
 				</div>
 				<div className='tech-content'>
 					<div className='tech-images-cards'>
-						{/* <img src={reactLogo} alt='react logo' />
-						<img src={flutterLogo} alt='flutter logo' />
-						<img src={jsLogo} alt='js logo' />
-						<img src={tsLogo} alt='ts logo' />
-						<img src={htmlLogo} alt='html logo' />
-						<img src={cssLogo} alt='css logo' />
-						<img src={scssLogo} alt='scss logo' />
-						<img src={matcssLogo} alt='materialize css logo' />
-						<img src={materialLogo} alt='MaterialUI logo' />
-						<img src={bootstrapLogo} alt='bootstrap logo' />
-						<img src={cppLogo} alt='cpp logo' />
-						<img src={dartLogo} alt='dart logo' />
-						<img src={gitLogo} alt='github logo' /> */}
 						<ImageSlider />
 					</div>
 				</div>

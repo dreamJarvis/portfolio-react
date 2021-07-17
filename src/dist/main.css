@@ -688,6 +688,66 @@
           transform: perspective(600px) rotateY(0deg);
 }
 
+.project-1 {
+  position: absolute;
+  top: 41%;
+  left: 26%;
+  -webkit-transform: translate(-26%, -41%);
+          transform: translate(-26%, -41%);
+}
+
+.project-1 img {
+  opacity: 0.9;
+}
+
+.project-2 {
+  position: absolute;
+  top: 41%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -41%);
+          transform: translate(-50%, -41%);
+}
+
+.project-2 img {
+  opacity: 0.9;
+}
+
+.project-3 {
+  position: absolute;
+  top: 41%;
+  left: 74%;
+  -webkit-transform: translate(-74%, -41%);
+          transform: translate(-74%, -41%);
+}
+
+.project-3 img {
+  opacity: 0.9;
+}
+
+.project-4 {
+  position: absolute;
+  top: 91%;
+  left: 26%;
+  -webkit-transform: translate(-26%, -91%);
+          transform: translate(-26%, -91%);
+}
+
+.project-5 {
+  position: absolute;
+  top: 91%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -91%);
+          transform: translate(-50%, -91%);
+}
+
+.project-6 {
+  position: absolute;
+  top: 91%;
+  left: 74%;
+  -webkit-transform: translate(-74%, -91%);
+          transform: translate(-74%, -91%);
+}
+
 .projects {
   position: absolute;
   left: 5vw;
@@ -707,13 +767,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.7))), url(../../src/assets/Images/backgruond.png) no-repeat center center/cover;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../src/assets/Images/backgruond.png) no-repeat center center/cover;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.7))), url(../../src/assets/Images/backgruond.png) no-repeat center center/cover;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(../../src/assets/Images/backgruond.png) no-repeat center center/cover;
 }
 
 .projects .project-heading {
   position: absolute;
-  top: 5%;
+  top: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -741,3 +801,507 @@
   font-size: 1.4rem;
   letter-spacing: 2px;
 }
+
+.projects .viewing-options {
+  width: 60vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 18%;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #fff;
+  font-family: 'Raleway';
+}
+
+.projects .viewing-options ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.projects .viewing-options li {
+  float: left;
+  margin-right: 2rem;
+}
+
+.projects .viewing-options li span {
+  font-size: 2.2rem;
+}
+
+.projects .viewing-options li span {
+  display: block;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: none;
+  border-bottom: 0px solid #ff9a9a;
+  background-color: none;
+  padding: 10px;
+  -webkit-transition: color 400ms ease-in;
+  transition: color 400ms ease-in;
+  -webkit-transition: background-color 400ms ease-in;
+  transition: background-color 400ms ease-in;
+}
+
+.projects .viewing-options li span:hover {
+  background-color: rgba(0, 0, 0, 0.178);
+  color: #ff9a9a;
+  cursor: pointer;
+}
+
+.container {
+  width: 600px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Raleway';
+}
+
+.container .card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+}
+
+.container .card .face {
+  width: 350px;
+  height: 200px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .card .face.face1 {
+  position: relative;
+  background: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+.container .card:hover .face.face1 {
+  background: #ff0057;
+}
+
+.container .card .face.face1 .content {
+  opacity: 0.2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 1px;
+}
+
+.container .card .face.face1 .content h2 {
+  font-family: 'Raleway';
+  font-size: 2.2rem;
+}
+
+.container .card .face.face1 .content p {
+  line-height: 1px;
+  font-size: 1.5rem;
+}
+
+.container .card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.container .card .face.face1 .content img {
+  max-width: 100px;
+}
+
+.container .card .face.face1 .content h3 {
+  margin: 10px 0 0;
+  padding: 0px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.container .card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  -webkit-transform: translate(0, -200px);
+          transform: translate(0, -200px);
+}
+
+.container .card:hover .face.face2 {
+  -webkit-transform: translate(350px, -200px);
+          transform: translate(350px, -200px);
+}
+
+.container .card .face.face3 {
+  position: relative;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  -webkit-transform: translate(0, -200px);
+          transform: translate(0, -200px);
+}
+
+.container .card:hover .face.face3 {
+  -webkit-transform: translate(-350px, -200px);
+          transform: translate(-350px, -200px);
+}
+
+.container .card .face.face2 .content p {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.container .card .face3 .content p {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.container .card .face.face2 .content a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.container .card .face.face2 .content a:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* Task : implement this to proj_1 */
+.box {
+  position: absolute;
+  left: 5vw;
+  width: 95vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Raleway';
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.9))), url(../../src/assets/Images/experience.png) no-repeat center center/cover;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../../src/assets/Images/experience.png) no-repeat center center/cover;
+}
+
+.box .experience {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box .experience .heading {
+  width: 60vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5rem;
+  border-bottom: 1px solid #fff;
+}
+
+.box .experience .heading h2 {
+  font-size: 4rem;
+  letter-spacing: 3px;
+  color: #ff9a9a;
+}
+
+.box .experience .experiences {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box .experience .experiences .exp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.box .experience .experiences .exp-1 .container .face,
+.box .experience .experiences .exp-3 .container .face {
+  border-left: 4px solid #fff;
+}
+
+.box .experience .experiences .exp-2 .container .face {
+  border-right: 4px solid #fff;
+}
+
+.box .experience .experiences .period {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box .experience .experiences .period span {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.container {
+  width: 600px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Raleway';
+}
+
+.container .card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+}
+
+.container .card .face {
+  width: 350px;
+  height: 200px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .card .face.face1 {
+  position: relative;
+  background: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+.container .card:hover .face.face1 {
+  background: #ff0057;
+}
+
+.container .card .face.face1 .content {
+  opacity: 0.2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 1px;
+}
+
+.container .card .face.face1 .content h2 {
+  font-family: 'Raleway';
+  font-size: 2.2rem;
+}
+
+.container .card .face.face1 .content p {
+  line-height: 1px;
+  font-size: 1.5rem;
+}
+
+.container .card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.container .card .face.face1 .content img {
+  max-width: 100px;
+}
+
+.container .card .face.face1 .content h3 {
+  margin: 10px 0 0;
+  padding: 0px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.container .card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  -webkit-transform: translate(0, -200px);
+          transform: translate(0, -200px);
+}
+
+.container .card:hover .face.face2 {
+  -webkit-transform: translate(350px, -200px);
+          transform: translate(350px, -200px);
+}
+
+.container .card .face.face3 {
+  position: relative;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  -webkit-transform: translate(0, -200px);
+          transform: translate(0, -200px);
+}
+
+.container .card:hover .face.face3 {
+  -webkit-transform: translate(-350px, -200px);
+          transform: translate(-350px, -200px);
+}
+
+.container .card .face.face2 .content p {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.container .card .face3 .content p {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.container .card .face.face2 .content a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.container .card .face.face2 .content a:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* Task : implement this to proj_1 */

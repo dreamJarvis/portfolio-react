@@ -20,12 +20,12 @@ export default function SideNavBar() {
 							</Link>
 						</li>
 						<li className='option-item'>
-							<Link to='/skills'>
+							<Link to='/projects'>
 								<i className='fas fa-terminal'></i>
 							</Link>
 						</li>
 						<li className='option-item'>
-							<Link to='/projects'>
+							<Link to='/experience'>
 								<i className='fas fa-clipboard-list'></i>
 							</Link>
 						</li>

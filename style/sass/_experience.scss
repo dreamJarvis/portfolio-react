@@ -1,0 +1,83 @@
+@import './cardHover';
+
+.box {
+   position: absolute;
+   left: 5vw;
+   width: 95vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Raleway';
+
+   background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+      url(../../src/assets/Images/experience.png) no-repeat center center / cover;
+
+
+   .experience {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+
+      .heading {
+         width: 60vw;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin-bottom: 5rem;
+         border-bottom: 1px solid #fff;
+
+         h2 {
+            font-size: 4rem;
+            letter-spacing: 3px;
+            color: rgb(255, 154, 154);
+         }
+      }
+
+      .experiences {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+
+
+         .exp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+         }
+
+         .exp-1,
+         .exp-3 {
+            .container .face {
+               border-left: 4px solid #fff;
+
+            }
+         }
+
+         .exp-2 {
+            .container .face {
+               border-right: 4px solid #fff;
+            }
+         }
+
+         .period {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span {
+               font-size: 3rem;
+               font-weight: bold;
+               letter-spacing: 2px;
+            }
+         }
+      }
+   }
+}
