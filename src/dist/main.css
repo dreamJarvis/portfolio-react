@@ -980,6 +980,7 @@
   margin-top: 3%;
   font-size: 1.4rem;
   letter-spacing: 2px;
+  color: #fff;
 }
 
 .projects .viewing-options {
@@ -1096,11 +1097,13 @@
 .container .card .face.face1 .content h2 {
   font-family: 'Raleway';
   font-size: 2.2rem;
+  color: #333;
 }
 
 .container .card .face.face1 .content p {
   line-height: 1px;
   font-size: 1.5rem;
+  color: #333;
 }
 
 .container .card:hover .face.face1 .content {
@@ -1314,6 +1317,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #fff;
 }
 
 .box .experience .experiences .period span {
@@ -1380,11 +1384,13 @@
 .container .card .face.face1 .content h2 {
   font-family: 'Raleway';
   font-size: 2.2rem;
+  color: #333;
 }
 
 .container .card .face.face1 .content p {
   line-height: 1px;
   font-size: 1.5rem;
+  color: #333;
 }
 
 .container .card:hover .face.face1 .content {
@@ -1563,6 +1569,7 @@
 
 .contact .contact-me form .form-group input,
 .contact .contact-me form .form-group textarea {
+  background-color: #333;
   border-radius: 10px;
   border: 0px solid black;
   resize: none;
@@ -1593,6 +1600,7 @@
 
 .contact .contact-me form .submit-btn {
   font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.479);
   outline: none;
   border: none;
   padding: 14px 30px;
@@ -1689,7 +1697,7 @@
 
 .contact .connect-with-me .socials .social-icons i:hover {
   color: #ff9a9a;
-  background-color: #fff;
+  background-color: #424242;
 }
 
 .contact .connect-with-me .socials .social-icons .twitter {
