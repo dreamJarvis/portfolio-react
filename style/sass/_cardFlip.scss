@@ -1,50 +1,8 @@
 /** @format */
-.project-1 {
-   position: absolute;
-   top: 33%;
-   left: 26%;
-   transform: translate(-26%, -33%);
-}
-
-.project-2 {
-   position: absolute;
-   top: 33%;
-   left: 50%;
-   transform: translate(-50%, -33%);
-}
-
-.project-3 {
-   position: absolute;
-   top: 33%;
-   left: 74%;
-   transform: translate(-74%, -33%);
-}
-
-.project-4 {
-   position: absolute;
-   top: 82%;
-   left: 26%;
-   transform: translate(-26%, -82%);
-}
-
-.project-5 {
-   position: absolute;
-   top: 82%;
-   left: 50%;
-   transform: translate(-50%, -82%);
-}
-
-.project-6 {
-   position: absolute;
-   top: 82%;
-   left: 74%;
-   transform: translate(-74%, -82%);
-}
-
 .card {
    cursor: pointer;
-   width: 300px;
-   height: 300px;
+   width: 280px;
+   height: 260px;
    border-radius: 10%;
 }
 

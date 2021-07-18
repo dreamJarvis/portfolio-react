@@ -9,12 +9,12 @@ import project3 from "../../assets/Images/img_recpog.jpg";
 const AI_MLProjects = () => {
 	return (
 		<>
-			<div className='card project-1'>
+			<div className='card2 project-7'>
 				<div className='front'>
 					<img src={project1} />
 				</div>
 				<div className='back'>
-					<div className='back-content project-1'>
+					<div className='back-content project-7'>
 						<div className='heading'>
 							<h2>Speech Recognition Using NLP</h2>
 							<span>
@@ -35,12 +35,12 @@ const AI_MLProjects = () => {
 				</div>
 			</div>
 
-			<div className='card project-2'>
+			<div className='card2 project-8'>
 				<div className='front'>
 					<img src={project2} />
 				</div>
 				<div className='back'>
-					<div className='back-content project-2'>
+					<div className='back-content project-8'>
 						<div className='heading'>
 							<h2>Attendence System Using Facial Recognition</h2>
 							<span>
@@ -58,12 +58,12 @@ const AI_MLProjects = () => {
 				</div>
 			</div>
 
-			<div className='card project-3'>
+			<div className='card2 project-9'>
 				<div className='front'>
 					<img src={project3} />
 				</div>
 				<div className='back'>
-					<div className='back-content project-3'>
+					<div className='back-content project-9'>
 						<div className='heading'>
 							<h2>Speech Embedded Image Recognition System</h2>
 							<span>

@@ -118,7 +118,7 @@ const WebDevProjects = () => {
 					<div className='back-content project-5'>
 						<div className='heading'>
 							<h2>Movie Explorer</h2>
-							<span>An Wen Application for searching for movies.</span>
+							<span>An Web Application for searching for movies.</span>
 							<span>Tech Stack: HTML5, CSS, Javascript, Bootstrap</span>
 						</div>
 						<div className='sm'>
@@ -142,7 +142,7 @@ const WebDevProjects = () => {
 						<div className='heading'>
 							<h2>Expense Tracker</h2>
 							<span>
-								An application to manage qnd keep track of the daily expenses.
+								An application to manage and keep track of the daily expenses.
 							</span>
 							<span>Tech-Stack: HTML5, CSS, JavaScript, Bootstrap</span>
 						</div>

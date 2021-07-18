@@ -1,8 +1,13 @@
+@import "./cardFlip";
+
 .project-1 {
    position: absolute;
-   top: 41%;
-   left: 26%;
-   transform: translate(-26%, -41%);
+   top: 30%;
+   left: 25%;
+
+   .back-content {
+      transform: translate(-25%, -30%);
+   }
 
    img {
       opacity: 0.9;
@@ -11,9 +16,12 @@
 
 .project-2 {
    position: absolute;
-   top: 41%;
-   left: 50%;
-   transform: translate(-50%, -41%);
+   top: 30%;
+   left: 42%;
+
+   .back-content {
+      transform: translate(-42%, -30%);
+   }
 
    img {
       opacity: 0.9;
@@ -22,9 +30,12 @@
 
 .project-3 {
    position: absolute;
-   top: 41%;
-   left: 74%;
-   transform: translate(-74%, -41%);
+   top: 30%;
+   left: 59%;
+
+   .back-content {
+      transform: translate(-59%, -30%);
+   }
 
    img {
       opacity: 0.9;
@@ -33,21 +44,42 @@
 
 .project-4 {
    position: absolute;
-   top: 91%;
-   left: 26%;
-   transform: translate(-26%, -91%);
+   top: 60%;
+   left: 25%;
+
+   .back-content {
+      transform: translate(-25%, -60%);
+   }
+
+   img {
+      opacity: 0.9;
+   }
 }
 
 .project-5 {
    position: absolute;
-   top: 91%;
-   left: 50%;
-   transform: translate(-50%, -91%);
+   top: 60%;
+   left: 42%;
+
+   .back-content {
+      transform: translate(-42%, -60%);
+   }
+
+   img {
+      opacity: 0.9;
+   }
 }
 
 .project-6 {
    position: absolute;
-   top: 91%;
-   left: 74%;
-   transform: translate(-74%, -91%);
+   top: 60%;
+   left: 59%;
+
+   .back-content {
+      transform: translate(-59%, -60%);
+   }
+
+   img {
+      opacity: 0.9;
+   }
 }

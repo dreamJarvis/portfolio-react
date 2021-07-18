@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
 /** @format */
 * {
   padding: 0;
@@ -506,58 +507,145 @@
 }
 
 /** @format */
-.project-1 {
-  position: absolute;
-  top: 33%;
-  left: 26%;
-  -webkit-transform: translate(-26%, -33%);
-          transform: translate(-26%, -33%);
-}
-
-.project-2 {
-  position: absolute;
-  top: 33%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -33%);
-          transform: translate(-50%, -33%);
-}
-
-.project-3 {
-  position: absolute;
-  top: 33%;
-  left: 74%;
-  -webkit-transform: translate(-74%, -33%);
-          transform: translate(-74%, -33%);
-}
-
-.project-4 {
-  position: absolute;
-  top: 82%;
-  left: 26%;
-  -webkit-transform: translate(-26%, -82%);
-          transform: translate(-26%, -82%);
-}
-
-.project-5 {
-  position: absolute;
-  top: 82%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -82%);
-          transform: translate(-50%, -82%);
-}
-
-.project-6 {
-  position: absolute;
-  top: 82%;
-  left: 74%;
-  -webkit-transform: translate(-74%, -82%);
-          transform: translate(-74%, -82%);
-}
-
 .card {
   cursor: pointer;
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 260px;
+  border-radius: 10%;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.6s linear;
+  transition: -webkit-transform 0.6s linear;
+  transition: transform 0.6s linear;
+  transition: transform 0.6s linear, -webkit-transform 0.6s linear;
+  border-radius: 10%;
+  font-family: 'Raleway';
+}
+
+.front img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.front {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
+}
+
+.back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #ff00bf;
+  -webkit-transform: perspective(600px) rotateY(180deg);
+          transform: perspective(600px) rotateY(180deg);
+}
+
+.back-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+  text-align: center;
+  width: 100%;
+}
+
+.back-content .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px 7px 5px 7px;
+  margin-top: 20px;
+}
+
+.back-content .heading span {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.sm {
+  margin: 15px 0;
+}
+
+.sm a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  font-size: 18px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.sm a:hover {
+  background: #2c3e50;
+}
+
+.card:hover > .front {
+  -webkit-transform: perspective(600px) rotateY(-180deg);
+          transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover > .back {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
+}
+
+/** @format */
+.card {
+  cursor: pointer;
+  width: 280px;
+  height: 260px;
   border-radius: 10%;
 }
 
@@ -690,10 +778,13 @@
 
 .project-1 {
   position: absolute;
-  top: 41%;
-  left: 26%;
-  -webkit-transform: translate(-26%, -41%);
-          transform: translate(-26%, -41%);
+  top: 30%;
+  left: 25%;
+}
+
+.project-1 .back-content {
+  -webkit-transform: translate(-25%, -30%);
+          transform: translate(-25%, -30%);
 }
 
 .project-1 img {
@@ -702,10 +793,13 @@
 
 .project-2 {
   position: absolute;
-  top: 41%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -41%);
-          transform: translate(-50%, -41%);
+  top: 30%;
+  left: 42%;
+}
+
+.project-2 .back-content {
+  -webkit-transform: translate(-42%, -30%);
+          transform: translate(-42%, -30%);
 }
 
 .project-2 img {
@@ -714,10 +808,13 @@
 
 .project-3 {
   position: absolute;
-  top: 41%;
-  left: 74%;
-  -webkit-transform: translate(-74%, -41%);
-          transform: translate(-74%, -41%);
+  top: 30%;
+  left: 59%;
+}
+
+.project-3 .back-content {
+  -webkit-transform: translate(-59%, -30%);
+          transform: translate(-59%, -30%);
 }
 
 .project-3 img {
@@ -726,26 +823,109 @@
 
 .project-4 {
   position: absolute;
-  top: 91%;
-  left: 26%;
-  -webkit-transform: translate(-26%, -91%);
-          transform: translate(-26%, -91%);
+  top: 60%;
+  left: 25%;
+}
+
+.project-4 .back-content {
+  -webkit-transform: translate(-25%, -60%);
+          transform: translate(-25%, -60%);
+}
+
+.project-4 img {
+  opacity: 0.9;
 }
 
 .project-5 {
   position: absolute;
-  top: 91%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -91%);
-          transform: translate(-50%, -91%);
+  top: 60%;
+  left: 42%;
+}
+
+.project-5 .back-content {
+  -webkit-transform: translate(-42%, -60%);
+          transform: translate(-42%, -60%);
+}
+
+.project-5 img {
+  opacity: 0.9;
 }
 
 .project-6 {
   position: absolute;
-  top: 91%;
-  left: 74%;
-  -webkit-transform: translate(-74%, -91%);
-          transform: translate(-74%, -91%);
+  top: 60%;
+  left: 59%;
+}
+
+.project-6 .back-content {
+  -webkit-transform: translate(-59%, -60%);
+          transform: translate(-59%, -60%);
+}
+
+.project-6 img {
+  opacity: 0.9;
+}
+
+.card2 {
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+  border-radius: 10%;
+}
+
+.card2:hover > .front {
+  -webkit-transform: perspective(600px) rotateY(-180deg);
+          transform: perspective(600px) rotateY(-180deg);
+}
+
+.card2:hover > .back {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
+}
+
+.project-7 {
+  position: absolute;
+  top: 30%;
+  left: 23%;
+}
+
+.project-7 .back-content {
+  -webkit-transform: translate(-25%, -30%);
+          transform: translate(-25%, -30%);
+}
+
+.project-7 img {
+  opacity: 0.9;
+}
+
+.project-8 {
+  position: absolute;
+  top: 30%;
+  left: 42%;
+}
+
+.project-8 .back-content {
+  -webkit-transform: translate(-42%, -30%);
+          transform: translate(-42%, -30%);
+}
+
+.project-8 img {
+  opacity: 0.9;
+}
+
+.project-9 {
+  position: absolute;
+  top: 30%;
+  left: 61%;
+}
+
+.project-9 .back-content {
+  -webkit-transform: translate(-59%, -30%);
+          transform: translate(-59%, -30%);
+}
+
+.project-9 img {
+  opacity: 0.9;
 }
 
 .projects {
@@ -1305,3 +1485,233 @@
 }
 
 /* Task : implement this to proj_1 */
+.contact {
+  position: absolute;
+  left: 5vw;
+  top: 0vh;
+  width: 95vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.8))), url(../../src/assets/Images/coffee.jpg) no-repeat center center/cover;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url(../../src/assets/Images/coffee.jpg) no-repeat center center/cover;
+  font-family: 'Dancing Script';
+}
+
+.contact .contact-me {
+  height: 65vh;
+  width: 40vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: Column;
+          flex-direction: Column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 20px;
+  border-right: 3px solid #000;
+}
+
+.contact .contact-me form {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: Column;
+          flex-direction: Column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact-me form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: Column;
+          flex-direction: Column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact-me form .form-group input {
+  width: 30vw;
+}
+
+.contact .contact-me form .form-group input,
+.contact .contact-me form .form-group textarea {
+  border-radius: 10px;
+  border: 0px solid black;
+  resize: none;
+  padding: 20px;
+  font-size: 1.5rem;
+  -webkit-transition: border 150ms ease-in-out;
+  transition: border 150ms ease-in-out;
+  -webkit-transition: -webkit-box-shadow 150ms ease-in-out;
+  transition: -webkit-box-shadow 150ms ease-in-out;
+  transition: box-shadow 150ms ease-in-out;
+  transition: box-shadow 150ms ease-in-out, -webkit-box-shadow 150ms ease-in-out;
+}
+
+.contact .contact-me form .form-group input:focus,
+.contact .contact-me form .form-group textarea:focus,
+.contact .contact-me form .form-group select:focus {
+  outline: none;
+  border: 2px solid #5e5e5e;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.contact .contact-me form .form-group input:hover,
+.contact .contact-me form .form-group textarea:hover {
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.contact .contact-me form .submit-btn {
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.301);
+  -webkit-transition: border 100ms ease-in-out;
+  transition: border 100ms ease-in-out;
+}
+
+.contact .contact-me form .submit-btn:hover {
+  border: 2px solid #ff9a9a;
+}
+
+.contact .contact-me .heading {
+  height: 10vh;
+}
+
+.contact .contact-me .heading h2 {
+  color: #ff9a9a;
+  font-size: 3.5rem;
+}
+
+.contact .connect-with-me {
+  height: 65vh;
+  width: 35vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: Column;
+          flex-direction: Column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.contact .connect-with-me .heading {
+  height: 10vh;
+}
+
+.contact .connect-with-me .heading h2 {
+  font-size: 3.5rem;
+  color: #ff9a9a;
+}
+
+.contact .connect-with-me .socials {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .connect-with-me .socials .divider {
+  width: 2px;
+  height: 50vh;
+  background-color: #494949;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: -100% 50%;
+          transform-origin: -100% 50%;
+}
+
+.contact .connect-with-me .socials .divider-1 {
+  width: 2px;
+  height: 50vh;
+  background-color: #494949;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: -100% 50%;
+          transform-origin: -100% 50%;
+}
+
+.contact .connect-with-me .socials .social-icons i {
+  color: #fff;
+  font-size: 5rem;
+  -webkit-transition: color 200ms ease-in;
+  transition: color 200ms ease-in;
+  -webkit-transition: background-color 150ms ease-in;
+  transition: background-color 150ms ease-in;
+  padding: 20px;
+  border-radius: 100%;
+}
+
+.contact .connect-with-me .socials .social-icons i:hover {
+  color: #ff9a9a;
+  background-color: #fff;
+}
+
+.contact .connect-with-me .socials .social-icons .twitter {
+  position: absolute;
+  top: 22%;
+  left: 43%;
+}
+
+.contact .connect-with-me .socials .social-icons .linkedIn {
+  position: absolute;
+  top: 45%;
+  left: 67%;
+}
+
+.contact .connect-with-me .socials .social-icons .insta {
+  position: absolute;
+  top: 69%;
+  left: 43%;
+}
+
+.contact .connect-with-me .socials .social-icons .github {
+  position: absolute;
+  top: 44%;
+  left: 18%;
+}

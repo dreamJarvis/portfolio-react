@@ -1,0 +1,56 @@
+.card2 {
+   cursor: pointer;
+   width: 300px;
+   height: 300px;
+   border-radius: 10%;
+}
+
+.card2:hover>.front {
+   transform: perspective(600px) rotateY(-180deg);
+}
+
+.card2:hover>.back {
+   transform: perspective(600px) rotateY(0deg);
+}
+
+.project-7 {
+   position: absolute;
+   top: 30%;
+   left: 23%;
+
+   .back-content {
+      transform: translate(-25%, -30%);
+   }
+
+   img {
+      opacity: 0.9;
+   }
+}
+
+.project-8 {
+   position: absolute;
+   top: 30%;
+   left: 42%;
+
+   .back-content {
+      transform: translate(-42%, -30%);
+   }
+
+   img {
+      opacity: 0.9;
+   }
+}
+
+.project-9 {
+   position: absolute;
+   top: 30%;
+   left: 61%;
+
+   .back-content {
+      transform: translate(-59%, -30%);
+   }
+
+   img {
+      opacity: 0.9;
+   }
+}

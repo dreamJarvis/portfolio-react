@@ -22,9 +22,9 @@ export default function about() {
 				<div className='profile-content'>
 					<div className='profile-content-container'>
 						<p>
-							I'm a software developer. I have worked web and mobile
+							I'm a software developer. I have in with web and mobile
 							development, but picking up a new framework or language isn't a
-							problem . I am a passionate problem solver and I have a thorough
+							problem. I am a passionate problem solver and I have a thorough
 							understanding of Algorithms and Data Structures.
 						</p>
 					</div>
