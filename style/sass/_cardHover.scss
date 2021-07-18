@@ -54,6 +54,10 @@
 
 .container .card:hover .face.face1 .content {
    opacity: 1;
+
+   h2 {
+      color: #000;
+   }
 }
 
 .container .card .face.face1 .content img {

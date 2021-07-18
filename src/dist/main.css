@@ -1109,6 +1109,10 @@
   opacity: 1;
 }
 
+.container .card:hover .face.face1 .content h2 {
+  color: #000;
+}
+
 .container .card .face.face1 .content img {
   max-width: 100px;
 }
@@ -1393,6 +1397,10 @@
 
 .container .card:hover .face.face1 .content {
   opacity: 1;
+}
+
+.container .card:hover .face.face1 .content h2 {
+  color: #000;
 }
 
 .container .card .face.face1 .content img {
