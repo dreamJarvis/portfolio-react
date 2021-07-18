@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.dee501db.chunk.css",
+    "main.css": "/portfolio-react/static/css/main.0e66d910.chunk.css",
     "main.js": "/portfolio-react/static/js/main.43b3f4b7.chunk.js",
     "main.js.map": "/portfolio-react/static/js/main.43b3f4b7.chunk.js.map",
     "runtime-main.js": "/portfolio-react/static/js/runtime-main.949a9236.js",
@@ -10,7 +10,7 @@
     "static/js/3.f50d0e92.chunk.js": "/portfolio-react/static/js/3.f50d0e92.chunk.js",
     "static/js/3.f50d0e92.chunk.js.map": "/portfolio-react/static/js/3.f50d0e92.chunk.js.map",
     "index.html": "/portfolio-react/index.html",
-    "static/css/main.dee501db.chunk.css.map": "/portfolio-react/static/css/main.dee501db.chunk.css.map",
+    "static/css/main.0e66d910.chunk.css.map": "/portfolio-react/static/css/main.0e66d910.chunk.css.map",
     "static/js/2.f5532d96.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.f5532d96.chunk.js.LICENSE.txt",
     "static/media/Dart-logo.f00251a3.png": "/portfolio-react/static/media/Dart-logo.f00251a3.png",
     "static/media/Materialui.4cd19feb.jpeg": "/portfolio-react/static/media/Materialui.4cd19feb.jpeg",
@@ -37,7 +37,7 @@
   "entrypoints": [
     "static/js/runtime-main.949a9236.js",
     "static/js/2.f5532d96.chunk.js",
-    "static/css/main.dee501db.chunk.css",
+    "static/css/main.0e66d910.chunk.css",
     "static/js/main.43b3f4b7.chunk.js"
   ]
 }
