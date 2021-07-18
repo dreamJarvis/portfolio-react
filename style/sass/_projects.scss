@@ -34,6 +34,7 @@
          margin-top: 3%;
          font-size: 1.4rem;
          letter-spacing: 2px;
+         color: #fff;
       }
    }
 
@@ -53,7 +54,6 @@
          margin: 0;
          padding: 0;
          overflow: hidden;
-         // background-color: #333333;
       }
 
       li {
@@ -81,7 +81,6 @@
       }
 
       li span:hover {
-         // background-color: #111111;
          background-color: rgba(0, 0, 0, 0.178);
          color: rgb(255, 154, 154);
          cursor: pointer;
