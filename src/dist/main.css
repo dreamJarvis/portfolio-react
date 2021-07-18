@@ -1097,13 +1097,11 @@
 .container .card .face.face1 .content h2 {
   font-family: 'Raleway';
   font-size: 2.2rem;
-  color: #333;
 }
 
 .container .card .face.face1 .content p {
   line-height: 1px;
   font-size: 1.5rem;
-  color: #333;
 }
 
 .container .card:hover .face.face1 .content {
@@ -1384,13 +1382,11 @@
 .container .card .face.face1 .content h2 {
   font-family: 'Raleway';
   font-size: 2.2rem;
-  color: #333;
 }
 
 .container .card .face.face1 .content p {
   line-height: 1px;
   font-size: 1.5rem;
-  color: #333;
 }
 
 .container .card:hover .face.face1 .content {
