@@ -18,16 +18,11 @@ function App() {
 			<BrowserRouter>
 				<SideBar />
 				<Switch>
-					<Route exact path='/portfolio-react' component={Home} />
-					{/* <Route exact path='/' component={Home} /> */}
-					<Route exact path='/portfolio-react/about' component={About} />
-					<Route
-						exact
-						path='/portfolio-react/experience'
-						component={Experience}
-					/>
-					<Route exact path='/portfolio-react/projects' component={Projects} />
-					<Route exact path='/portfolio-react/contact' component={Contact} />
+					<Route exact path='/' component={Home} />
+					<Route exact path='/about' component={About} />
+					<Route exact path='/experience' component={Experience} />
+					<Route exact path='/projects' component={Projects} />
+					<Route exact path='/contact' component={Contact} />
 				</Switch>
 			</BrowserRouter>
 		</Box>
