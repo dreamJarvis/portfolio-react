@@ -19,11 +19,11 @@ function App() {
 				<SideBar />
 				<Switch>
 					<Route exact path='/' component={Home} />
-					<Route path='/about' component={About} />
-					<Route path='/experience' component={Experience} />
-					<Route path='/projects' component={Projects} />
-					<Route path='/contact' component={Contact} />
-					<Route path='/portfolio-react' component={Home} />
+					<Route exact path='/about' component={About} />
+					<Route exact path='/experience' component={Experience} />
+					<Route exact path='/projects' component={Projects} />
+					<Route exact path='/contact' component={Contact} />
+					<Route exact path='/portfolio-react' component={Home} />
 				</Switch>
 			</BrowserRouter>
 		</Box>
