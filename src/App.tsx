@@ -18,12 +18,12 @@ function App() {
 			<BrowserRouter>
 				<SideBar />
 				<Switch>
-					<Route path='/portfolio-react' component={Home} />
-					{/* <Route exact path='/' component={Home} /> */}
+					<Route exact path='/' component={Home} />
 					<Route path='/about' component={About} />
 					<Route path='/experience' component={Experience} />
 					<Route path='/projects' component={Projects} />
 					<Route path='/contact' component={Contact} />
+					<Route path='/portfolio-react' component={Home} />
 				</Switch>
 			</BrowserRouter>
 		</Box>
