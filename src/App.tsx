@@ -19,6 +19,18 @@ function App() {
 				<SideBar />
 				<Switch>
 					<Route exact path='/portfolio-react' component={Home} />
+					<Route exact path='/portfolio-react/about' component={About} />
+					<Route
+						exact
+						path='/portfolio-react/experience'
+						component={Experience}
+					/>
+					<Route exact path='/portfolio-react/projects' component={Projects} />
+					<Route
+						exact
+						path='/portfolio-react/projects/contact'
+						component={Contact}
+					/>
 					<Route exact path='/' component={Home} />
 					<Route exact path='/about' component={About} />
 					<Route exact path='/experience' component={Experience} />
