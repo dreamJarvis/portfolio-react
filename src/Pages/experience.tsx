@@ -37,57 +37,6 @@ export default function Experience() {
 								</div>
 							</div>
 						</div>
-						<div className='exp exp-2'>
-							<div className='container'>
-								<div className='card'>
-									<div className='face face1'>
-										<div className='content'>
-											<h2>ITech missons</h2>
-											<h3>Solutions Developer</h3>
-										</div>
-									</div>
-
-									<div className='face face3'>
-										<div className='content'>
-											<p>
-												Worked on large scaled projects, handled the data flow
-												from backend and visualizing it onto the front-end using
-												Angular. Used technologies such as Angular, typescript,
-												nodejs, expressjs, jquery, MongoDB.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className='period'>
-								<span>6/3/21 - 30/4/21</span>
-							</div>
-						</div>
-						<div className='exp exp-3'>
-							<div className='period'>
-								<span>3/5/21 - current</span>
-							</div>
-							<div className='container'>
-								<div className='card'>
-									<div className='face face1'>
-										<div className='content'>
-											<h2>Minus O2</h2>
-											<h3>Flutter Developer</h3>
-										</div>
-									</div>
-
-									<div className='face face2'>
-										<div className='content'>
-											<p>
-												Builded the E-commerce Mobile App for android and ios
-												using Flutter. Handled backend data using Firebase
-												Functionalities and services
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
