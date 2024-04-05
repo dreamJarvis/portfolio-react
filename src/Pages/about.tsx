@@ -1,7 +1,7 @@
 /** @format */
 import React from "react";
 
-import ProfilePic from "../assets/Images/selfiee.jpeg";
+import ProfilePic from "../assets/Images/selfie_6.png";
 import ImageSlider from "../utils/imageSlider";
 
 export default function about() {
@@ -22,10 +22,8 @@ export default function about() {
 				<div className='profile-content'>
 					<div className='profile-content-container'>
 						<p>
-							I'm a software developer. I have in with web and mobile
-							development, but picking up a new framework or language isn't a
-							problem. I am a passionate problem solver and I have a thorough
-							understanding of Algorithms and Data Structures.
+							Hi, I'm Tarun Jha,
+							I have 2.5+ years of experience of working as a front-end developer. I have worked with multiple Frontend technologies but mainly Reactjs/Redux library .
 						</p>
 					</div>
 				</div>
