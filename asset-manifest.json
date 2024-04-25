@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.1f02d519.chunk.css",
-    "main.js": "/portfolio-react/static/js/main.6ec7d598.chunk.js",
-    "main.js.map": "/portfolio-react/static/js/main.6ec7d598.chunk.js.map",
+    "main.css": "/portfolio-react/static/css/main.c97128c1.chunk.css",
+    "main.js": "/portfolio-react/static/js/main.622e6ced.chunk.js",
+    "main.js.map": "/portfolio-react/static/js/main.622e6ced.chunk.js.map",
     "runtime-main.js": "/portfolio-react/static/js/runtime-main.949a9236.js",
     "runtime-main.js.map": "/portfolio-react/static/js/runtime-main.949a9236.js.map",
     "static/js/2.90d5070e.chunk.js": "/portfolio-react/static/js/2.90d5070e.chunk.js",
@@ -10,8 +10,9 @@
     "static/js/3.f50d0e92.chunk.js": "/portfolio-react/static/js/3.f50d0e92.chunk.js",
     "static/js/3.f50d0e92.chunk.js.map": "/portfolio-react/static/js/3.f50d0e92.chunk.js.map",
     "index.html": "/portfolio-react/index.html",
-    "static/css/main.1f02d519.chunk.css.map": "/portfolio-react/static/css/main.1f02d519.chunk.css.map",
+    "static/css/main.c97128c1.chunk.css.map": "/portfolio-react/static/css/main.c97128c1.chunk.css.map",
     "static/js/2.90d5070e.chunk.js.LICENSE.txt": "/portfolio-react/static/js/2.90d5070e.chunk.js.LICENSE.txt",
+    "static/media/3d-globe.299fdd12.jpg": "/portfolio-react/static/media/3d-globe.299fdd12.jpg",
     "static/media/Dart-logo.f00251a3.png": "/portfolio-react/static/media/Dart-logo.f00251a3.png",
     "static/media/Materialui.4cd19feb.jpeg": "/portfolio-react/static/media/Materialui.4cd19feb.jpeg",
     "static/media/attendenceSys.b546a2e5.jpg": "/portfolio-react/static/media/attendenceSys.b546a2e5.jpg",
@@ -19,8 +20,7 @@
     "static/media/bootstrap-social-logo.5f7e2134.png": "/portfolio-react/static/media/bootstrap-social-logo.5f7e2134.png",
     "static/media/c++.d7a72328.png": "/portfolio-react/static/media/c++.d7a72328.png",
     "static/media/css3.6649364c.jpg": "/portfolio-react/static/media/css3.6649364c.jpg",
-    "static/media/expenseManager.a57e7143.png": "/portfolio-react/static/media/expenseManager.a57e7143.png",
-    "static/media/expense_split.0fe298ff.png": "/portfolio-react/static/media/expense_split.0fe298ff.png",
+    "static/media/cveditor.8f877d09.jpeg": "/portfolio-react/static/media/cveditor.8f877d09.jpeg",
     "static/media/guy_comp.68ad2528.jpg": "/portfolio-react/static/media/guy_comp.68ad2528.jpg",
     "static/media/html5.0b689745.png": "/portfolio-react/static/media/html5.0b689745.png",
     "static/media/imdb.f85fc563.png": "/portfolio-react/static/media/imdb.f85fc563.png",
@@ -37,7 +37,7 @@
   "entrypoints": [
     "static/js/runtime-main.949a9236.js",
     "static/js/2.90d5070e.chunk.js",
-    "static/css/main.1f02d519.chunk.css",
-    "static/js/main.6ec7d598.chunk.js"
+    "static/css/main.c97128c1.chunk.css",
+    "static/js/main.622e6ced.chunk.js"
   ]
 }
