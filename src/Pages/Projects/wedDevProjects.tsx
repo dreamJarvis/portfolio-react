@@ -2,8 +2,8 @@
 
 import React from "react";
 
-import project1 from "../../assets/Images/expense_split.png";
-import project2 from "../../assets/Images/expenseManager.png";
+import project1 from "../../assets/Images/3d-globe.jpg";
+import project2 from "../../assets/Images/cveditor.jpeg";
 import project3 from "../../assets/Images/socialMediaApp.png";
 import project5 from "../../assets/Images/imdb.png";
 import project6 from "../../assets/Images/guy_comp.jpg";
@@ -45,18 +45,17 @@ const WebDevProjects = () => {
 				<div className='back'>
 					<div className='back-content project-2'>
 						<div className='heading'>
-							<h2>POS</h2>
+							<h2>Resume Builder</h2>
 							<span>
-								Worked on the front-end part of Billing system application for a
-								freelancing project.
+								Build your resume, edit it, or download it into PDF format
 							</span>
-							<span>Tech-Stack: ReactJS, MaterialUI</span>
+							<span>Tech-Stack: ReactJS, Redux, TailwindCSS</span>
 						</div>
 						<div className='sm'>
-							<a href='https://github.com/Showtim3/pos'>
+							<a href='https://github.com/dreamJarvis/resume-editor'>
 								<i className='fab fa-github'></i>
 							</a>
-							<a href='http://13.232.142.172:5000/admin-login'>
+							<a href='https://dreamjarvis.github.io/resume-editor/'>
 								<i className='fas fa-eye'></i>
 							</a>
 						</div>
@@ -71,16 +70,16 @@ const WebDevProjects = () => {
 				<div className='back'>
 					<div className='back-content project-3'>
 						<div className='heading'>
-							<h2>SplitWise</h2>
-							<span>A fullstack Expense management system</span>
-							<span>
-								Tech-Stack: ReactJS, MaterializeCSS, SCSS, Bootstrap, Redux,
-								NodeJs, ExpressJs
-							</span>
+							<h2>3d Map Renderer</h2>
+							<span>A 3D Map Rendering Web App</span>
+							<span>Tech-Stack: ReactJS, Redux</span>
 						</div>
 						<div className='sm'>
-							<a href='https://github.com/dreamJarvis/splitwise'>
+							<a href='https://github.com/dreamJarvis/3d_map_render/'>
 								<i className='fab fa-github'></i>
+							</a>
+							<a href='https://dreamjarvis.github.io/3d_map_render/'>
+								<i className='fas fa-eye'></i>
 							</a>
 						</div>
 					</div>

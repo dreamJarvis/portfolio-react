@@ -26,9 +26,9 @@ export default function Projects() {
 					<li>
 						<span onClick={() => setCurrentProjectOption(0)}>Web</span>
 					</li>
-					<li>
+					{/* <li>
 						<span onClick={() => setCurrentProjectOption(1)}>Mobile</span>
-					</li>
+					</li> */}
 					<li>
 						<span onClick={() => setCurrentProjectOption(2)}>AI/ML</span>
 					</li>
@@ -40,5 +40,3 @@ export default function Projects() {
 		</div>
 	);
 }
-
-// https://mattfarley.ca/
