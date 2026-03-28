@@ -75,79 +75,14 @@ export default function Experience() {
 								<div className='card'>
 									<div className='face face1'>
 										<div className='content'>
-											<h2>GlobalLogic</h2>
-											<h5 style={{ color: "white" }}>(a hitachi subidiary)</h5>
-											<h3>SDE-1</h3>
-										</div>
-									</div>
-									<div className='face face3'>
-										<div className='content'>
-											<ul>
-												<li>
-													<small>
-														Developed and maintained full-stack features using
-														Java, Spring Boot, and Angular 10+, contributing
-														across the entire SDLC — from REST API design to
-														component-level front-end implementation for an
-														internal Employee Management System serving 1000+
-														employees.
-													</small>
-												</li>
-												<li>
-													<small>
-														Architected and implemented backend microservices
-														for Google's Employee Desk platform, following
-														domain-driven design (DDD) principles — decomposing
-														monolithic services into independently deployable
-														units, improving system modularity and reducing
-														inter-service coupling.
-													</small>
-												</li>
-												<li>
-													<small>
-														Optimized REST API performance by introducing
-														response caching, pagination, and payload
-														compression, reducing average API latency by ~35%
-														and improving throughput under peak load conditions.
-													</small>
-												</li>
-												<li>
-													<small>
-														Deployed and configured AWS EC2 instances with
-														in-memory caching layers (e.g., Redis/ElastiCache),
-														reducing redundant DB calls by ~40% and improving
-														end-to-end response times for high-frequency
-														employee data queries.
-													</small>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className='period'>
-								<span>08/21 - 03/22</span>
-							</div>
-						</div>
-					</div>
-					<div className='experiences'>
-						<div className='exp exp-1'>
-							<div className='period'>
-								<span>04/22 - 10/23</span>
-							</div>
-							<div className='container'>
-								<div className='card'>
-									<div className='face face1'>
-										<div className='content'>
-											<h2>Velsera</h2>
+											<h2>VELSERA</h2>
 											<h5 style={{ color: "white" }}>
 												(formarly known as pierian)
 											</h5>
 											<h3>SDE-1</h3>
 										</div>
 									</div>
-
-									<div className='face face2'>
+									<div className='face face3'>
 										<div className='content'>
 											<ul>
 												<li>
@@ -188,6 +123,71 @@ export default function Experience() {
 														server load, and cutting infrastructure costs by
 														minimizing unnecessary round-trips on high-frequency
 														endpoints.
+													</small>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div className='period'>
+								<span>04/22 - 10/23</span>
+							</div>
+						</div>
+					</div>
+					<div className='experiences'>
+						<div className='exp exp-1'>
+							<div className='period'>
+								<span>08/21 - 03/22</span>
+							</div>
+							<div className='container'>
+								<div className='card'>
+									<div className='face face1'>
+										<div className='content'>
+											<h2>GlobalLogic</h2>
+											<h5 style={{ color: "white" }}>(a hitachi subidiary)</h5>
+
+											<h3>SDE-1</h3>
+										</div>
+									</div>
+									<div className='face face2'>
+										<div className='content'>
+											<ul>
+												<li>
+													<small>
+														Developed and maintained full-stack features using
+														Java, Spring Boot, and Angular 10+, contributing
+														across the entire SDLC — from REST API design to
+														component-level front-end implementation for an
+														internal Employee Management System serving 1000+
+														employees.
+													</small>
+												</li>
+												<li>
+													<small>
+														Architected and implemented backend microservices
+														for Google's Employee Desk platform, following
+														domain-driven design (DDD) principles — decomposing
+														monolithic services into independently deployable
+														units, improving system modularity and reducing
+														inter-service coupling.
+													</small>
+												</li>
+												<li>
+													<small>
+														Optimized REST API performance by introducing
+														response caching, pagination, and payload
+														compression, reducing average API latency by ~35%
+														and improving throughput under peak load conditions.
+													</small>
+												</li>
+												<li>
+													<small>
+														Deployed and configured AWS EC2 instances with
+														in-memory caching layers (e.g., Redis/ElastiCache),
+														reducing redundant DB calls by ~40% and improving
+														end-to-end response times for high-frequency
+														employee data queries.
 													</small>
 												</li>
 											</ul>
