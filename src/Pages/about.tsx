@@ -22,8 +22,10 @@ export default function about() {
 				<div className='profile-content'>
 					<div className='profile-content-container'>
 						<p>
-							Hi, I'm Tarun Jha,
-							I have 2.5+ years of experience of working as a front-end developer. I have worked with multiple Frontend technologies but mainly Reactjs/Redux library .
+							Hey, I'm Tarun, a React Developer with 4 years of experience
+							building scalable SPAs with React.js. I thrive in startup
+							environments, owning features end-to-end with a strong focus on
+							performance and clean component architecture.
 						</p>
 					</div>
 				</div>

@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Ubuntu:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+
 /** @format */
 * {
   padding: 0;
@@ -126,6 +127,7 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -284,7 +286,7 @@
   align-items: center;
 }
 
-.img-set > img {
+.img-set>img {
   object-fit: cover;
   width: 200px;
   height: 180px;
@@ -315,15 +317,15 @@
   background: #ffffff;
 }
 
-#radio1:checked ~ .first {
+#radio1:checked~.first {
   margin-left: 0;
 }
 
-#radio2:checked ~ .first {
+#radio2:checked~.first {
   margin-left: -20%;
 }
 
-#radio3:checked ~ .first {
+#radio3:checked~.first {
   margin-left: -40%;
 }
 
@@ -347,15 +349,15 @@
   margin-right: 40px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1 {
+#radio1:checked~.navigation-auto .auto-btn1 {
   background: #a0a0a0;
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2 {
+#radio2:checked~.navigation-auto .auto-btn2 {
   background: #a0a0a0;
 }
 
-#radio3:checked ~ .navigation-auto .auto-btn3 {
+#radio3:checked~.navigation-auto .auto-btn3 {
   background: #a0a0a0;
 }
 
@@ -443,11 +445,11 @@
   background: #2c3e50;
 }
 
-.card:hover > .front {
+.card:hover>.front {
   transform: perspective(600px) rotateY(-180deg);
 }
 
-.card:hover > .back {
+.card:hover>.back {
   transform: perspective(600px) rotateY(0deg);
 }
 
@@ -535,11 +537,11 @@
   background: #2c3e50;
 }
 
-.card:hover > .front {
+.card:hover>.front {
   transform: perspective(600px) rotateY(-180deg);
 }
 
-.card:hover > .back {
+.card:hover>.back {
   transform: perspective(600px) rotateY(0deg);
 }
 
@@ -634,11 +636,11 @@
   border-radius: 10%;
 }
 
-.card2:hover > .front {
+.card2:hover>.front {
   transform: perspective(600px) rotateY(-180deg);
 }
 
-.card2:hover > .back {
+.card2:hover>.back {
   transform: perspective(600px) rotateY(0deg);
 }
 
@@ -955,6 +957,21 @@
 .box .experience .experiences .exp-1 .container .face,
 .box .experience .experiences .exp-3 .container .face {
   border-left: 4px solid #fff;
+}
+
+
+.box .experience .experiences .container .face ul {
+  max-height: 200px;
+  overflow-y: auto;
+  list-style-type: disc;
+  padding: 20px;
+  margin: 10px;
+  scrollbar-width: none;
+  justify-content: space-evenly;
+}
+
+.box .experience .experiences .container .face li {
+  margin: 10px;
 }
 
 .box .experience .experiences .exp-2 .container .face {
